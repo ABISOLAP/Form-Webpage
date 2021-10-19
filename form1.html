@@ -1,0 +1,141 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Form page</title>
+<link rel="stylesheet" href="form1.css">
+</head>
+
+<body>
+<div>
+  <header>
+    <h1 id="title">OLAB FASHION TRAINING FORM</h1>
+    <p id="description">OLAB fashion institute train people on how to sew clothes and bags. Fill this form below to be part of our physical or online training.</p>
+    </header>
+  <form id="survey-form">
+    <label id="name-label" >Name:</label>
+    <input type="text" placeholder ="Enter your name"  id="name">
+    <p><label id="email-label" >Email:</label>
+      <input type="email" placeholder ="Enter your email"id="email"></p>
+	  
+     <p><label id="number-label" >Age(optional)</label>
+      <input type="number" placeholder ="Enter your age"id="number"  min="10" max="99"></p>
+    <div class="form-group">
+      <p>Which skill do you want to learn?</p>
+	  
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Fashion bag training</option>
+        <option value="student">Student wears training</option>
+        <option value="job">Native wear training</option>
+        <option value="learner">Corporate wear training</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Would you recommend Olab fashion institute to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+    <div class="form-group">
+      <p>
+        What is your favorite feature of Olab fashion?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">sewing finishing</option>
+        <option value="projects">Projects</option>
+        <option value="community">Teaching</option>
+        <option value="openSource">Beautiful working place</option>
+      </select>
+    </div>
+ What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+     
+    
+      
+      
+      <label><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Sewing</label
+      >
+      
+     
+     
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Cutting</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Marketing Strategies</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Courses</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+
+    
+    
+  </form>
+</div>
+</body>
+</html>
